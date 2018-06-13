@@ -134,3 +134,33 @@ nav {
 .vits {
     margin-top: 50px;
 }
+
+.fullpage {
+    min-height: 100vh;
+}
+
+.titlemarg {
+    margin-top: 100px;
+}
+
+.card {
+    background: #f5f5f5;
+}
+
+.card.small .card-content, .card.medium .card-content, .card.large .card-content {
+    overflow: scroll;
+}
+
+#nutfacts {
+    margin-top: 120px;
+}
+
+.factfix {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+#links {
+    position: relative;
+}

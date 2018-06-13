@@ -20,4 +20,8 @@ module.exports = function(app) {
     res.sendFile(path.join(__dirname, "../public/create.html"));
   });
 
+  app.get("/comment", function(req, res) {
+    res.sendFile(path.join(__dirname, "../public/comment.html"));
+  });
+
 };

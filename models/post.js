@@ -23,6 +23,13 @@ var Post = sequelize.define("Post", {
       }
     }
   });
+
+  Post.associate = function (models) {
+    Post.hasMany (models.Comment, {
+      onDelete: "cascade"
+    });
+  };
+
   return Post;
 
 };
