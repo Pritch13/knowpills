@@ -30,5 +30,18 @@ module.exports = function (app) {
                 res.json(dbPost);
             });
     });
+    app.get("/api/posts/:id", function (req, res) {
+        console.log(req.params.id);
+        db.Post.findAll({
+            where: {
+                id: req.params.id
+            }
+        })
+            .then(function (dbPost) {
+                console.log(dbPost);
+                
+                res.json(dbPost);
+            });
+    });
 
 };

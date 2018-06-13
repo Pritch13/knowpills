@@ -12,3 +12,15 @@ $(function() {
       }
     });
   });
+  
+  var id = localStorage.getItem('id');
+
+  console.log(id);
+  
+
+  $.get("/api/posts/" + id, function(data) {
+    console.log(data);
+    
+
+  });
+  

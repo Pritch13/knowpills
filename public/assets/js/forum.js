@@ -10,7 +10,8 @@ function displayEmpty() {
       var username = posts[i].username;
       var title = posts[i].title;
       var body = posts[i].body;
-      var entry = "<div class='row'><div class='col l12'><div class='card'><div class='card-content'><span class='card-title'>"+title+"</span><p>"+body+"</br><a class='waves-effect waves-light btn learnmore forumMore'>See more</a></p><p class='right-align'>Created by "+username+"</p></div></div></div></div>";
+      var id = posts[i].id;
+      var entry = "<div class='row'><div class='col l12'><div class='card'><div class='card-content'><span class='card-title'>"+title+"</span><p>"+body+"</br><a class='waves-effect waves-light btn learnmore forumMore' data-id='" + id + "'>See more</a></p><p class='right-align'>Created by "+username+"</p></div></div></div></div>";
       $(".forum-container").append(entry);
     }
   }
@@ -33,6 +34,9 @@ function displayEmpty() {
   getPosts();
 
   $(document).on("click", ".forumMore", function(){
+    var idClicked = $(this).attr("data-id");
+    localStorage.setItem('id', idClicked);
+
     window.location.href = "/comment";
   });
 

@@ -57,6 +57,10 @@ function getAlts (category) {
     duration: 1000
 });
 
+sr.reveal('.topin', {
+  origin: 'top',
+  distance: '200px',
+});
 
 });
 
