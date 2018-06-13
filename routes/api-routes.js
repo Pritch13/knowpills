@@ -14,8 +14,20 @@ module.exports = function (app) {
         db.Alternative.findAll({})
             .then(function (data) {
                 console.log(data);
-                
+
                 res.json(data);
+            });
+    });
+
+    app.post("/api/posts", function (req, res) {
+        console.log(req.body);
+        db.Post.create({
+            username: req.body.username,
+            title: req.body.title,
+            body: req.body.body
+        })
+            .then(function (dbPost) {
+                res.json(dbPost);
             });
     });
 
