@@ -57,7 +57,7 @@ $("#submitcomment").on("click", function () {
     postid: id
   }
 
-  if (!commentName || !commentBody) {
+  if (!commentName || !commentBody || commentName === " " || commentBody === " ") {
     alert('Please complete all fields.');
   } else {
     $.post("/api/comment/", newComment, function () {

@@ -13,7 +13,7 @@ $("#formsubmit").on("click", function () {
   console.log(newPost);
 
 
-  if (!name || !title || !body) {
+  if (!name || !title || !body || name === " " || title === " " || body === " ") {
     alert('Please complete all fields.');
   } else {
     $.post("/api/posts/", newPost, function () {
