@@ -63,7 +63,7 @@ module.exports = function (app) {
         })
             .then(function (dbPost) {
                 console.log(dbPost);
-                
+
                 res.json(dbPost);
             });
     });

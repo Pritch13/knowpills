@@ -1,6 +1,6 @@
-module.exports = function(sequelize, DataTypes) {
+module.exports = function (sequelize, DataTypes) {
 
-var Post = sequelize.define("Post", {
+  var Post = sequelize.define("Post", {
     username: {
       type: DataTypes.STRING,
       allowNull: false,
@@ -25,7 +25,7 @@ var Post = sequelize.define("Post", {
   });
 
   Post.associate = function (models) {
-    Post.hasMany (models.Comment, {
+    Post.hasMany(models.Comment, {
       onDelete: "cascade"
     });
   };
