@@ -46,7 +46,7 @@ $(document).ready(function () {
 
   window.sr = ScrollReveal();
 
-  sr.reveal('.card', {
+  sr.reveal('.alt-container', {
     origin: 'bottom',
     distance: '500px',
     duration: 1000

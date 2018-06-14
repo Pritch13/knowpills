@@ -1,5 +1,5 @@
 insert into Posts (Username, title, Body)
-Values ("Anonymous", "How i got off Opioids", "It all started when I started cycling...");
+Values ("Anonymous", "How i got off Opioids", "It all began when I started cycling...");
 
 insert into Posts (Username, title, Body)
 Values ("Anonymous", "Addiction is not deserved", "A guy with a seriously addictive personality.");
@@ -27,25 +27,23 @@ serve to relieve muscle tension.");
 INSERT INTO Alternatives (Name, Details)
 VALUES ("Kava", "This can improve mood and, thus, be effective 
 in alleviating some severity of depression. Additionally, it can 
-increase mental clarity. Some have concluded that it aids in lessening 
-neurotic anxiety. However, it can potentially result in liver issues and 
+increase mental clarity. Some have concluded that it aids in lessening neurotic anxiety. However, it can potentially result in liver issues and 
 should be used only for a short period of time.");
 
 INSERT INTO Alternatives (Name, Details)
-VALUES ("Passion Flower", "Passionflower is another common alternative 
+VALUES ("Passionflower", "Passionflower is another common alternative 
 treatment method, with some research proving its effectiveness. A study 
 published in the Journal of Clinical Pharmacy and Therapeutics indicates 
 that it can potentially be effective in the management of mental symptoms 
 and act as an adjuvant agent to clonidine-based therapies.");
 
 INSERT INTO Alternatives (Name, Details)
-VALUES ("Melatonin", "For those experiencing insomnia as a withdrawal symptom, 
-melatonin can be effective. Although the person taking the substance must be 
+VALUES ("Melatonin", "For those experiencing insomnia as a withdrawal symptom, melatonin can be effective. Although the person taking the substance must be 
 cautious about dosage, it can help with sleep difficulties.");
 
 INSERT INTO Alternatives (Name, Details)
-VALUES ("Vitamin B1", "Assists in reducing fatigue, sustaining mental clarity 
-and lessens disorientation during opiod withdrawal.");
+VALUES ("Vitamin B1", "Assists in reducing fatigue, sustaining mental clarity, 
+and lessens disorientation during opioid withdrawal.");
 
 INSERT INTO Alternatives (Name, Details)
 VALUES ("Vitamin B2", "Decreases the severity of headaches and hand tremors 
@@ -82,7 +80,7 @@ research demonstrating that use of these supplements eases the discomfort of wit
 
 INSERT INTO Alternatives (Name, Details)
 VALUES ("Tai-Kang-Ning", " In a 2008 study published in the “American Journal of Drug and Alcohol 
-Abuse,” 64 patients were recruited in a double-blind investigation comparing Tai-Kang-Ning 
+Abuse,” 64 patients were recruited in a double-blind investigation comparing Tai-Kang-Ning to
 tolofexidine, a leading opioid withdrawal medication. Tai-Kang-Ning performed as well as 
 tolofexidine, leading researchers to conclude that Tai-Kang-Ning is effective for moderate-to-severe opioid withdrawal.");
 
@@ -111,23 +109,14 @@ during China's Liang Dynasty, 220–589 AD, according to the American Cancer Soc
 
 INSERT INTO Alternatives (Name, Details)
 VALUES ("Exercise is meditation in motion.", "The Mayo Clinic has described exercise 
-as “meditation in motion,” meaning by concentrating on the physical we can experience 
+as “meditation in motion”, meaning by concentrating on the physical we can experience 
 the psychological and emotional benefits of meditation. Finding this clarity within 
 chaos can make recovery much more manageable.");
 
 INSERT INTO Alternatives (Name, Details)
 VALUES ("Cardio as meditation.", "Through movement, we can refocus our thoughts on 
 our own well-being and forget, at least briefly, all that is going on in our lives. 
-You may leave your work-out with a clearer mind, feeling more rejuvenated and optimistic.");
-
-INSERT INTO Alternatives (Name, Details)
-VALUES ("Can mindfulness help with pain management?", "Some people addicted to 
-opioids worry that chronic pain will pressure them into breaking their sobriety. 
-Studies show that a three-week course of mindfulness meditation can help reduce chronic pain.");
-
-INSERT INTO Alternatives (Name, Details)
-VALUES ("Can mindfulness help with addiction?", "Since mindfulness encourages people to pay 
-attention to their thoughts, it can train them to recognize temptation.");
+You may leave your workout with a clearer mind, feeling more rejuvenated and optimistic.");
 
 INSERT INTO Alternatives (Name, Details)
 VALUES ("Mindfulness and addiction.", "A certain thought, if left unchecked, can become a 
@@ -137,6 +126,15 @@ drug-use, however, often helps people break this cycle.");
 INSERT INTO Alternatives (Name, Details)
 VALUES ("Mindfulness and outpatient programs.", "Through mindfulness, people in outpatient 
 programs can stop thoughts from controlling their actions.");
+
+INSERT INTO Alternatives (Name, Details)
+VALUES ("Can mindfulness help with pain management?", "Some people addicted to 
+opioids worry that chronic pain will pressure them into breaking their sobriety. 
+Studies show that a three-week course of mindfulness meditation can help reduce chronic pain.");
+
+INSERT INTO Alternatives (Name, Details)
+VALUES ("Can mindfulness help with addiction?", "Since mindfulness encourages people to pay 
+attention to their thoughts, it can train them to recognize temptation.");
 
 INSERT INTO Alternatives (Name, Details)
 VALUES ("How does one practice mindfulness?", "People can practice mindfulness in a variety 
@@ -150,4 +148,4 @@ where you acknowledge thoughts that arise in your mind and let them go without j
 
 INSERT INTO Alternatives (Name, Details)
 VALUES ("Does exercise assist in recovery?", "Studies show that exercise and physical activity can 
-actually, help return dopamine levels to pre-abuse heights. Lessening withdraw effects.");
+actually help return dopamine levels to pre-abuse heights. Lessening withdraw effects.");
