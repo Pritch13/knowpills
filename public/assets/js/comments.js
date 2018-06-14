@@ -31,6 +31,18 @@ $(function() {
 
   });
 
+  $.get("/api/comment/" + id, function(resData) {
+    console.log(resData);
+
+    for (let i = 0; i < resData.length; i++) {
+      var name = resData[i].username;
+      var body = resData[i].body;
+      var commentEntry = "<div class='commentdiv'><div class='row'><div class='col l12'><p class='right-align'>"+body+"</p></div></div><div class='row'><div class='col l12'><p class='right-align'>Commented by "+name+"</p></div></div></div>";
+      $(".comment-container").append(commentEntry);
+    }
+
+  })
+
 
   $("#submitcomment").on("click", function(){
     var commentName = $("#name").val().trim();
@@ -41,7 +53,8 @@ $(function() {
 
     var newComment = {
       username: commentName,
-      body: commentBody
+      body: commentBody,
+      postid: id
     }
 
     if (!commentName || !commentBody) {

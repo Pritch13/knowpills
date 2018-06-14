@@ -10,8 +10,12 @@ module.exports = function (app) {
             });
     });
 
-    app.get("/api/comment/", function (req, res) {
-        db.Comment.findAll({})
+    app.get("/api/comment/:id", function (req, res) {
+        db.Comment.findAll({
+            where: {
+                PostId: req.params.id
+            }
+        })
             .then(function (dbPost) {
                 res.json(dbPost);
             });
@@ -42,7 +46,8 @@ module.exports = function (app) {
         console.log(req.body);
         db.Comment.create({
             username: req.body.username,
-            body: req.body.body
+            body: req.body.body,
+            PostId: req.body.postid
         })
             .then(function (dbPost) {
                 res.json(dbPost);
