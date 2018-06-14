@@ -52,6 +52,12 @@ $(document).ready(function () {
     duration: 1000
   });
 
+  sr.reveal('.wellalt-container', {
+    origin: 'bottom',
+    distance: '500px',
+    duration: 1000
+  });
+
   sr.reveal('.nextbutton', {
     origin: 'bottom',
     distance: '500px',
