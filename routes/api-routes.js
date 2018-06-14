@@ -10,6 +10,13 @@ module.exports = function (app) {
             });
     });
 
+    app.get("/api/comment/", function (req, res) {
+        db.Comment.findAll({})
+            .then(function (dbPost) {
+                res.json(dbPost);
+            });
+    });
+
     app.get("/api/alt/", function (req, res) {
         db.Alternative.findAll({})
             .then(function (data) {
@@ -30,6 +37,18 @@ module.exports = function (app) {
                 res.json(dbPost);
             });
     });
+
+    app.post("/api/comment", function (req, res) {
+        console.log(req.body);
+        db.Comment.create({
+            username: req.body.username,
+            body: req.body.body
+        })
+            .then(function (dbPost) {
+                res.json(dbPost);
+            });
+    });
+
     app.get("/api/posts/:id", function (req, res) {
         console.log(req.params.id);
         db.Post.findAll({
