@@ -58,7 +58,7 @@ $("#submitcomment").on("click", function () {
   }
 
   if (!commentName || !commentBody) {
-    alert('Info Required!');
+    alert('Please complete all fields.');
   } else {
     $.post("/api/comment/", newComment, function () {
       window.location.href = "/comment";

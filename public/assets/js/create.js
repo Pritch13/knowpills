@@ -14,7 +14,7 @@ $("#formsubmit").on("click", function () {
 
 
   if (!name || !title || !body) {
-    alert('Info Required!');
+    alert('Please complete all fields.');
   } else {
     $.post("/api/posts/", newPost, function () {
       window.location.href = "/support";
