@@ -17,14 +17,6 @@ function getAlts(category) {
       $(".wellalt-container").append(entry);
     }
 
-    window.sr = ScrollReveal();
-
-    sr.reveal('.card', {
-      origin: 'bottom',
-      distance: '500px',
-      duration: 1000
-    });
-
   });
 }
 
