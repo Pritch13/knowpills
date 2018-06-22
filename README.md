@@ -7,6 +7,6 @@ All facts and statistics sourced from the CDC.
 
 Demo the website here : knowpills.net
 
-![Alt text](kprm1)
-![Alt text](kprm2)
-![Alt text](kprm3)
+![Alt text](kprm1.png)
+![Alt text](kprm2.png)
+![Alt text](kprm3.png)
